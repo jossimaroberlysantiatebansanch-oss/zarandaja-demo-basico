@@ -1,0 +1,121 @@
+:root {
+  --fondo: #fff8ec;
+  --texto: #1f1712;
+  --suave: #6f5d4d;
+  --acento: #a8283a;
+  --naranja: #f7a21b;
+  --linea: #ecd9b8;
+  --tarjeta: #fffdf8;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.45;
+}
+.cabecera {
+  background: var(--naranja);
+  color: #1f1712;
+  text-align: center;
+  padding: 26px 16px 20px;
+  border-bottom: 6px solid var(--acento);
+}
+.cabecera h1 {
+  font-family: "Kaushan Script", "Brush Script MT", cursive;
+  font-size: 2.6rem;
+  font-weight: 400;
+  line-height: 1.1;
+}
+.cabecera p {
+  font-size: .8rem;
+  letter-spacing: .15em;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.pestanas {
+  position: sticky; top: 0; z-index: 5;
+  display: flex; gap: 8px; overflow-x: auto;
+  padding: 10px 12px;
+  background: var(--fondo);
+  border-bottom: 1px solid var(--linea);
+}
+.pestanas button {
+  flex: none;
+  border: 1px solid var(--linea);
+  background: var(--tarjeta);
+  color: var(--texto);
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: .95rem;
+  cursor: pointer;
+}
+.pestanas button.activa {
+  background: var(--acento);
+  border-color: var(--acento);
+  color: #fff;
+}
+.pestanas button:focus-visible { outline: 3px solid #e0a100; outline-offset: 2px; }
+
+main { max-width: 640px; margin: 0 auto; padding: 18px 16px 30px; }
+main h2 { font-family: Georgia, serif; font-size: 1.4rem; margin-bottom: 12px; }
+
+.plato {
+  display: flex; justify-content: space-between; gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--linea);
+}
+.plato h3 { font-size: 1.05rem; }
+.plato p { color: var(--suave); font-size: .92rem; }
+.precio { font-weight: 700; color: var(--acento); white-space: nowrap; }
+
+.menu-dia {
+  background: var(--tarjeta);
+  border: 2px solid var(--acento);
+  border-radius: 10px;
+  padding: 16px;
+}
+.menu-dia .precio-grande { font-size: 1.6rem; font-weight: 700; color: var(--acento); margin-bottom: 10px; }
+.menu-dia h3 {
+  background: var(--acento);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 16px 0 8px;
+}
+.menu-dia li, .menu-dia p { padding-left: 4px; }
+.menu-dia ul { list-style: none; margin-top: 4px; }
+.menu-dia li { padding: 3px 0; }
+
+.pie { text-align: center; color: var(--suave); font-size: .85rem; padding: 18px; }
+
+/* ---- Estilo con color para las categorías ---- */
+main h2 {
+  background: var(--acento);
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border-bottom: 4px solid var(--naranja);
+  margin-bottom: 14px;
+}
+
+.plato {
+  background: var(--tarjeta);
+  border: 1px solid var(--linea);
+  border-left: 6px solid var(--naranja);
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+
+.precio {
+  background: var(--naranja);
+  color: #1f1712;
+  padding: 4px 10px;
+  border-radius: 14px;
+  font-size: .95rem;
+}
