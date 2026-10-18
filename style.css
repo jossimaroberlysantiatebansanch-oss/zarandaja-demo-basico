@@ -119,3 +119,8 @@ main h2 {
   border-radius: 14px;
   font-size: .95rem;
 }
+
+.agotado { opacity: .55; }
+.agotado h3, .agotado li { text-decoration: line-through; }
+.agotado .precio { background: #ddd; text-decoration: none; }
+.aviso { text-align: center; padding: 30px 10px; color: var(--suave); }
