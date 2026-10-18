@@ -89,7 +89,7 @@ function iniciar(datos) {
 async function cargar() {
   try {
     const url = URL_HOJA + (URL_HOJA.includes("?") ? "&" : "?") + "t=" + Date.now();
-    const r = await fetch(url);
+    const r = await fetch(url, { cache: "no-store"});
     if (!r.ok) throw new Error("Error " + r.status);
     const filas = leerCSV(await r.text());
     const cab = filas[0].map(normalizar);
