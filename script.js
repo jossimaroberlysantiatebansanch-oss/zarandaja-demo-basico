@@ -13,7 +13,7 @@ function pintarMenuDelDia() {
     <div class="menu-dia">
       <div class="precio-grande">${soles(m.precio)}</div>
       <h3>Entrada</h3>${lista(m.entradas)}
-      <h3>Segundo a elegir</h3>${lista(m.segundos)}
+      <h3>Segundo</h3>${lista(m.segundos)}
       ${m.postre ? `<h3>Postre</h3><p>${m.postre}</p>` : ""}
       <h3>Refresco</h3><p>${m.refresco}</p>
     </div>`;
