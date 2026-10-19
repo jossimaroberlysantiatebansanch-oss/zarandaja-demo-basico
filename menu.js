@@ -21,18 +21,18 @@ const categorias = [
   {
     nombre: "Platos de fondo",
     platos: [
-      { nombre: "Lomo saltado", descripcion: "Res salteada con cebolla, tomate, papas fritas y arroz.", precio: 32 },
-      { nombre: "Ají de gallina", descripcion: "Pollo deshilachado en crema de ají amarillo, con arroz.", precio: 26 },
-      { nombre: "Ceviche clásico", descripcion: "Pescado fresco, limón, camote y choclo.", precio: 34 },
-      { nombre: "Seco de res", descripcion: "Guiso con culantro, frejoles y arroz.", precio: 28 }
+      { nombre: "Lomo saltado", descripcion: "Res salteada con cebolla, tomate, papas fritas y arroz.", precio: 25 },
+      { nombre: "Ají de gallina", descripcion: "Pollo deshilachado en crema de ají amarillo, con arroz.", precio: 22 },
+      { nombre: "Ceviche clásico", descripcion: "Pescado fresco, limón, camote y choclo.", precio: 28 },
+      { nombre: "Seco de res", descripcion: "Guiso con culantro, frejoles y arroz.", precio: 24 }
     ]
   },
   {
     nombre: "Bebidas",
     platos: [
-      { nombre: "Chicha morada (jarra)", descripcion: "", precio: 16 },
-      { nombre: "Limonada frozen", descripcion: "", precio: 10 },
-      { nombre: "Gaseosa personal", descripcion: "", precio: 5 }
+      { nombre: "Chicha morada (jarra)", descripcion: "", precio: 10 },
+      { nombre: "Limonada frozen", descripcion: "", precio: 12 },
+      { nombre: "Gaseosa personal", descripcion: "", precio: 3 }
     ]
   },
  
